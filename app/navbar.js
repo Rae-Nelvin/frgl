@@ -1,10 +1,22 @@
+"use client";
 import Link from 'next/link';
 import Image from 'next/image';
+import React, { useState, useEffect } from 'react';
 
 export default function Navbar() {
 
+    const [isScrolled, setIsScrolled] = useState(false);
+
+    useEffect(() => {
+        const handleScroll = () => {
+            setIsScrolled(window.scrollY > 0);
+        };
+        window.addEventListener('scroll', handleScroll);
+        return () => window.removeEventListener('scroll', handleScroll);
+    }, [])
+
     return (
-        <nav className='px-[120px] py-8 flex flex-row justify-between text-inter text-white fixed w-full bg-black bg-opacity-20 backdrop-blur-md'>
+        <nav className={`px-[120px] py-8 flex flex-row justify-between text-inter text-white fixed w-full transition-all duration-500 ease-in-out ${isScrolled ? 'bg-black bg-opacity-20 backdrop-blur-md' : ''}`}>
             <Link href={"/"} className='font-extrabold uppercase text-4xl'>FRGL.</Link>
             <div className='py-3 flex flex-row justify-between text-sm font-medium uppercase space-x-[50px]'>
                 <h2>Trending</h2>
