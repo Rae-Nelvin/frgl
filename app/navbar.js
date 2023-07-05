@@ -1,9 +1,10 @@
 import Link from 'next/link';
-import Image from 'next/image'
+import Image from 'next/image';
 
 export default function Navbar() {
+
     return (
-        <nav className='px-[120px] py-8 flex flex-row justify-between text-inter text-white fixed w-full'>
+        <nav className='px-[120px] py-8 flex flex-row justify-between text-inter text-white fixed w-full bg-black bg-opacity-20 backdrop-blur-md'>
             <Link href={"/"} className='font-extrabold uppercase text-4xl'>FRGL.</Link>
             <div className='py-3 flex flex-row justify-between text-sm font-medium uppercase space-x-[50px]'>
                 <h2>Trending</h2>

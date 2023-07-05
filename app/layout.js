@@ -1,6 +1,7 @@
 import './globals.css';
 import Navbar from './navbar';
 import Section1 from './section-1'
+import Section2 from './section-2'
 
 export const metadata = {
   title: 'FRGL',
@@ -14,6 +15,7 @@ export default function RootLayout({ children }) {
         <Navbar />
         {/* {children} */}
         <Section1 />
+        <Section2 />
       </body>
     </html>
   )
