@@ -2,6 +2,7 @@ import './globals.css';
 import Navbar from './navbar';
 import Section1 from './section-1';
 import Section2 from './section-2';
+import Section3 from './section-3';
 import Cookies from './cookies';
 
 export const metadata = {
@@ -18,6 +19,7 @@ export default function RootLayout({ children }) {
         {/* {children} */}
         <Section1 />
         <Section2 />
+        <Section3 />
       </body>
     </html>
   )

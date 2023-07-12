@@ -8,7 +8,7 @@ export default function Section1() {
                             backgroundRepeat: "no-repeat" }} 
                             className='min-h-screen flex flex-col text-white font-helvetica'>
             <div className='mx-auto items-center my-auto'>
-                <h1 className='font-bold text-[150px] line-height-[120px] leading-[120px]'><span className='font-nympha font-normal'>Curate</span><br></br>
+                <h1 className='font-bold text-[300px] leading-[250px]'><span className='font-nympha font-normal'>Curate</span><br></br>
                     Your Own<br></br>
                     Style.
                 </h1>
