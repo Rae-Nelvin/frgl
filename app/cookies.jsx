@@ -25,9 +25,9 @@ export default function Cookies() {
                 <h2 className='font-normal text-2xl'>Scroll down</h2>
             </div>
             <div className={`flex flex-col justify-between bg-[#0C1C32] rounded-lg w-[450px] p-6 space-y-8 mr-10 ${showButtons ? 'opacity-100 transition-opacity duration-500 ease-in-out' : 'opacity-0 transition-opacity duration-500 ease-in-out'}`}>
-                <p className='font-normal text-2xl'>This website uses cookies. By continuing to browse the site you are agreeing to the use of cookies. <span className='underline'>Read more here</span>.
+                <p className='font-normal text-xl 3xl:text-2xl'>This website uses cookies. By continuing to browse the site you are agreeing to the use of cookies. <span className='underline'>Read more here</span>.
                 </p>
-                <div className='flex flex-row justify-between transition-colors duration-300 ease-in-out text-xl'>
+                <div className='flex flex-row justify-between transition-colors duration-300 ease-in-out text-lg 3xl:text-xl'>
                     <button className='bg-[#203046] px-11 py-4 items-center font-bold uppercase rounded-md shadow-black shadow-xl hover:bg-[#06101d] ' onClick={handleButtonClick}>Okay</button>
                     <button className='px-10 py-4 items-center font-bold uppercase rounded-md hover:bg-[#06101d]' onClick={handleButtonClick}>Reject</button>
                 </div>
