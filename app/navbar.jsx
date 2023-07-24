@@ -16,7 +16,7 @@ export default function Navbar() {
     }, [])
 
     return (
-        <nav className={`px-[120px] py-8 flex flex-row justify-between text-inter text-white fixed w-full transition-all duration-500 ease-in-out z-50 ${isScrolled ? 'bg-black bg-opacity-20 backdrop-blur-md' : ''}`}>
+        <nav className={`px-[120px] py-8 flex flex-row justify-between text-inter text-white fixed w-screen transition-all duration-500 ease-in-out z-50 ${isScrolled ? 'bg-black bg-opacity-20 backdrop-blur-md' : ''}`}>
             <Link href={"/"} className='font-extrabold uppercase text-5xl'>FRGL.</Link>
             <div className='py-3 flex flex-row justify-between text-xl font-medium uppercase space-x-[50px]'>
                 <h2>Trending</h2>
