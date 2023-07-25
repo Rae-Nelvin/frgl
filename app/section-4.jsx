@@ -1,7 +1,7 @@
 "use client";
-import Image from 'next/image';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
+import { Autoplay } from 'swiper';
 
 export default function Section4() {
     return (
@@ -22,16 +22,16 @@ export default function Section4() {
                     slidesPerView={3}
                     loop={true}
                     autoplay={{
-                        delay: 100,
-                        disableOnInteraction: false
+                        delay:1000,
                     }}
-                    className='max-h-screen mt-[40rem]'
+                    modules={[Autoplay]}
+                    className='max-h-screen mt-[25rem] 2xl:mt-[40rem] 3xl:mt-[50rem] mr-20 2xl:mr-60 3xl:mr-40'
                 >
-                    <SwiperSlide><img src='icons/Puma-logo.png' className='w-[200px] 2xl:w-[300px] 3xl:w-[400px]'></img></SwiperSlide>
-                    <SwiperSlide><img src='icons/Nike-logo.png' className='w-[200px] 2xl:w-[300px] 3xl:w-[400px]'></img></SwiperSlide>
-                    <SwiperSlide><img src='icons/Gucci-logo.png' className='w-[200px] 2xl:w-[300px] 3xl:w-[400px]'></img></SwiperSlide>
-                    <SwiperSlide><img src='icons/Giordano-logo.png' className='w-[200px] 2xl:w-[300px] 3xl:w-[400px]'></img></SwiperSlide>
-                    <SwiperSlide><img src='icons/Adidas-logo.png' className='w-[200px] 2xl:w-[300px] 3xl:w-[400px]'></img></SwiperSlide>
+                    <SwiperSlide className='w-[200px] 2xl:w-[300px] 3xl:w-[400px]'><img src='icons/Puma-logo.png' className='w-full'></img></SwiperSlide>
+                    <SwiperSlide className='w-[200px] 2xl:w-[300px] 3xl:w-[400px]'><img src='icons/Nike-logo.png' className='w-full'></img></SwiperSlide>
+                    <SwiperSlide className='w-[200px] 2xl:w-[300px] 3xl:w-[400px]'><img src='icons/Gucci-logo.png' className='w-full'></img></SwiperSlide>
+                    <SwiperSlide className='w-[200px] 2xl:w-[300px] 3xl:w-[400px]'><img src='icons/Giordano-logo.png' className='w-full'></img></SwiperSlide>
+                    <SwiperSlide className='w-[200px] 2xl:w-[300px] 3xl:w-[400px]'><img src='icons/Adidas-logo.png' className='w-full'></img></SwiperSlide>
                 </Swiper>
             </div>
         </section>
