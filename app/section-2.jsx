@@ -8,7 +8,7 @@ export default function Section2() {
                 <div className='flex flex-col w-1/2'>
                     <div className='mt-[-5%] relative'>
                         <img src='icons/Section-2-Line.svg' alt='Section 2 Line SVG' className='w-[40%] mt-[-10%] 2xl:w-[50%] 2xl:mt-[-15%] 3xl:w-[60%] 3xl:mt-[-30%]'></img>
-                        <img src='icons/Section-2-Star.svg' alt='Section 2 Star SVG' className='absolute bottom-[-40%] 2xl:bottom-[-32%] left-[15%] 2xl:left-[20%] 3xl:left-[25%] w-[20%]'></img>
+                        <img src='icons/Section-2-Star.svg' alt='Section 2 Star SVG' className='absolute bottom-[-30%] 2xl:bottom-[-32%] left-[20%] 2xl:left-[20%] 3xl:left-[25%] w-[15%] 2xl:w-[20%]'></img>
                     </div>
                     <div className='flex flex-col font-helvetica text-[#0C1C32] mt-16 2xl:mt-20 ml-20 2xl:ml-40'>
                         <h1 className='text-[60px] 2xl:text-[100px] 3xl:text-[160px] font-bold'>Enjoy Discount Up to 70%</h1>
