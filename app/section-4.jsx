@@ -22,7 +22,7 @@ export default function Section4() {
                     slidesPerView={3}
                     loop={true}
                     autoplay={{
-                        delay:1000,
+                        delay:2000,
                     }}
                     modules={[Autoplay]}
                     className='max-h-screen mt-[25rem] 2xl:mt-[40rem] 3xl:mt-[50rem] mr-20 2xl:mr-60 3xl:mr-40'
