@@ -6,6 +6,7 @@ import React, { useState, useEffect } from 'react';
 export default function Navbar() {
 
     const [isScrolled, setIsScrolled] = useState(false);
+    const [isMenuOpen, setMenuOpen] = useState(false);
 
     useEffect(() => {
         const handleScroll = () => {
@@ -14,6 +15,11 @@ export default function Navbar() {
         window.addEventListener('scroll', handleScroll);
         return () => window.removeEventListener('scroll', handleScroll);
     }, [])
+
+
+    const toggleMenu = () => {
+        setMenuOpen((prev) => !prev);
+    };
 
     return (
         <nav className={`px-[120px] py-4 2xl:py-8 flex flex-row justify-between items-center text-inter text-white fixed w-screen transition-all duration-500 ease-in-out z-50 ${isScrolled ? 'bg-black bg-opacity-20 backdrop-blur-md' : ''}`}>
