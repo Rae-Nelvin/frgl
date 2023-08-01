@@ -56,8 +56,9 @@ export default function Section3() {
                         }}
                         modules={[FreeMode, Autoplay]}
                         spaceBetween={100}
+                        className='overflow-visible'
                     >
-                        <SwiperSlide className='flex flex-col w-[300px] 2xl:w-[400px] 3xl:w-[580px] pr-10 2xl:pr-20 cursor-pointer hover:scale-105 transition-all duration-500 ease-in-out' onClick={() => handleSlideClick('/images/section-3-1.png', 'Sweater Putih Keren', '75')}>
+                        <SwiperSlide className='flex flex-col w-[300px] 2xl:w-[400px] 3xl:w-[580px] pr-10 2xl:pr-20 cursor-pointer hover:scale-105 transition-all duration-500 ease-in-out h-max' onClick={() => handleSlideClick('/images/section-3-1.png', 'Sweater Putih Keren', '75')}>
                             <img src='/images/section-3-1.png' alt='Section 3 Image 1'></img>
                             <div className='bg-[#F8F8F8]'>
                                 <h2 className='font-bold text-lg 2xl:text-2xl 3xl:text-3xl mt-3 mb-1'>Sweater Putih Keren</h2>
